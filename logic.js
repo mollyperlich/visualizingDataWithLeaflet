@@ -31,7 +31,7 @@ function createFeatures(earthquakeData) {
       },
 
       // Create popups
-      eachFeature: function (feature, layer) {
+      onEachFeature: function (feature, layer) {
         return layer.bindPopup(`<strong>Place:</strong> ${feature.properties.place}<br><strong>Magnitude:</strong> ${feature.properties.mag}`);
       }
     });
